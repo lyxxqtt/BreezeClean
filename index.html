@@ -18,256 +18,267 @@
      <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 <body>
-      <!-- NAVBAR (HAMBURGER) -->
-<header class="navbar">
-  <a href="index.html" class="logo-container" aria-label="Go to homepage">
-    <img src="/assets/images/BREEZE-LOGO-WITH-TEXT.svg" alt="Logo" class="logo-img" />
-  </a>
+  <!-- NAVBAR (HAMBURGER) -->
+  <header class="navbar">
+      <!-- Logo for Desktop -->
+      <a href="index.html" class="logo-container" aria-label="Go to homepage">
+        <img src="/assets/images/BREEZE-LOGO-WITH-TEXT.svg" alt="Logo" class="logo-img" />
+      </a>
 
-  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+      <!-- Hamburger Button for Mobile -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <a href="index.html" class="portrait-logo-container" aria-label="Go to homepage">
-    <img src="/assets/images/BREEZE-LOGO-WITH-TEXT.svg" alt="Logo" class="logo-img" />
-  </a>
+      <!-- Logo for Mobile Portrait View -->
+      <a href="index.html" class="portrait-logo-container" aria-label="Go to homepage">
+        <img src="/assets/images/BREEZE-LOGO-WITH-TEXT.svg" alt="Logo" class="logo-img" />
+      </a>
 
-  <nav>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#products">PRODUCTS</a></li>
-      <li><a href="#usage">USAGE</a></li>
-      <li><a href="#video">VIDEO</a></li>
-      <li><a href="#safety">SAFETY</a></li>
-      <li><a href="#team">TEAM</a></li>
-    </ul>
-  </nav>
-</header>
-
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#products">PRODUCTS</a></li>
+          <li><a href="#usage">USAGE</a></li>
+          <li><a href="#video">VIDEO</a></li>
+          <li><a href="#safety">SAFETY</a></li>
+          <li><a href="#team">TEAM</a></li>
+        </ul>
+      </nav>
+  </header>
 <BR><BR><br><br>
 <!-- =============================== -->
 <!-- ===      HERO SECTION       === -->
- 
-<div class="hero-wrapper">
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Get Dirty for Good<br>with <span>Breeze</span></h1>
-      <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore.</p>
-      <a href="#products" class="hero-btn">See Products</a>
-    </div>
-    <div class="hero-image">
-      <img src="/assets/images/breeze-product/BREEZE-HERO-SECTION.svg" alt="Product Image">
-    </div>
-  </section>
-</div>
+  <div class="hero-wrapper">
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Get Dirty for Good<br>with <span>Breeze</span></h1>
+        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore.</p>
+        <a href="#products" class="hero-btn">See Products</a>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/images/breeze-product/BREEZE-HERO-SECTION.svg" alt="Product Image">
+      </div>
+    </section>
+  </div>
 <br><br>
-
 <!-- ================================== -->
 <!-- ===      PRODUCT-SECTION       === -->
-<section id="products">
-    <h2 class="products-title">Best Selling Breeze Detergent</h2>
+  <section id="products">
+      <h2 class="products-title">Best Selling Breeze Detergent</h2>
 
-    <!-- Moving product banner container -->
-<div id="moving-product" class="moving-banner"></div>
+      <!-- Moving product banner container -->
+      <div id="moving-product" class="moving-banner"></div>
 
+      <div class="products-grid">
+          <article class="product-card">
+              <div class="product-image">
+                  <img src="product1.jpg" alt="Breeze Power Machine Liquid Detergent">
+              </div>
+              <h3 class="product-title">Breeze Power Machine Liquid</h3>
+              <p class="product-description">
+                  Aliquip in eiusmod consequat ad deserunt nulla. Sit duis pariatur do ullamco sunt dolore ex eiusmod fugiat ad proident aliqua consectetur non.
+              </p>
+              <ul class="product-features">
+                  <li>Deep cleaning formula</li>
+                  <li>Compatible with all machines</li>
+                  <li>Fabric care technology</li>
+                  <li>Refreshing scent</li>
+              </ul>
+          </article>
 
-    <div class="products-grid">
-        <article class="product-card">
-            <div class="product-image">
-                <img src="product1.jpg" alt="Breeze Power Machine Liquid Detergent">
-            </div>
-            <h3 class="product-title">Breeze Power Machine Liquid</h3>
-            <p class="product-description">
-                Aliquip in eiusmod consequat ad deserunt nulla. Sit duis pariatur do ullamco sunt dolore ex eiusmod fugiat ad proident aliqua consectetur non. 
-            </p>
-            <ul class="product-features">
-                <li>Deep cleaning formula</li>
-                <li>Compatible with all machines</li>
-                <li>Fabric care technology</li>
-                <li>Refreshing scent</li>
-            </ul>
-        </article>
+          <article class="product-card">
+              <div class="product-image">
+                  <img src="product2.jpg" alt="Breeze Power Machine Floral Detergent">
+              </div>
+              <h3 class="product-title">Breeze Power Machine Floral</h3>
+              <p class="product-description">
+                  Pariatur ipsum veniam exercitation ex. Proident ut ex deserunt aute deserunt incididunt. Nostrud nulla reprehenderit id occaecat aliqua ex velit elit.
+              </p>
+              <ul class="product-features">
+                  <li>Floral fragrance</li>
+                  <li>Gentle on fabrics</li>
+                  <li>Color protection</li>
+                  <li>Concentrated formula</li>
+              </ul>
+          </article>
 
-        <article class="product-card">
-            <div class="product-image">
-                <img src="product2.jpg" alt="Breeze Power Machine Floral Detergent">
-            </div>
-            <h3 class="product-title">Breeze Power Machine Floral</h3>
-            <p class="product-description">
-                Pariatur ipsum veniam exercitation ex. Proident ut ex deserunt aute deserunt incididunt. Nostrud nulla reprehenderit id occaecat aliqua ex velit elit. Quis est consectetur cillum amet est duis.
-            </p>
-            <ul class="product-features">
-                <li>Floral fragrance</li>
-                <li>Gentle on fabrics</li>
-                <li>Color protection</li>
-                <li>Concentrated formula</li>
-            </ul>
-        </article>
-
-        <article class="product-card">
-            <div class="product-image">
-                <img src="product3.jpg" alt="Breeze Liquid Detergent Premium">
-            </div>
-            <h3 class="product-title">Breeze Liquid Detergent Premium</h3>
-            <p class="product-description">
-                Labore ex do sunt do ad aute eiusmod sint. Ipsum nulla Lorem reprehenderit cupidatat do nostrud. Commodo culpa adipisicing proident esse aliquip.
-            </p>
-            <ul class="product-features">
-                <li>Premium formulation</li>
-                <li>Easy-pour bottle design</li>
-                <li>Professional-grade performance</li>
-                <li>Long-lasting freshness</li>
-            </ul>
-        </article>
-    </div>
-</section>
-
-<!-- ================================-->
-<!-- ===      USAGE-SECTION       === -->
-<section class="usage-section" id="usage">
-  <div class="usage-text">
-    <h1 id="usage-heading">HOW TO USE BREEZE</h1>
-    <p>Simple steps para malinis at mabango ang iyong damit gamit ang Breeze detergent.</p>
-  </div>
-
-  <!-- Icon slider -->
-  <div class="usage-slider" role="region" aria-label="Service Slider" tabindex="0">
-
-    <!-- Arrow Buttons -->
-    <button class="arrow prev" aria-label="Previous Slide">
-      <i class="fas fa-chevron-left" aria-hidden="true"></i>
-    </button>
-
-    <div class="usage-track" aria-live="polite">
-      <div class="usage-item">
-        <i class="fas fa-hand-paper" aria-hidden="true"></i>
-        <p>Pre-treat Stains</p>
+          <article class="product-card">
+              <div class="product-image">
+                  <img src="product3.jpg" alt="Breeze Liquid Detergent Premium">
+              </div>
+              <h3 class="product-title">Breeze Liquid Detergent Premium</h3>
+              <p class="product-description">
+                  Labore ex do sunt do ad aute eiusmod sint. Ipsum nulla Lorem reprehenderit cupidatat do nostrud. Commodo culpa adipisicing proident esse aliquip.
+              </p>
+              <ul class="product-features">
+                  <li>Premium formulation</li>
+                  <li>Easy-pour bottle design</li>
+                  <li>Professional-grade performance</li>
+                  <li>Long-lasting freshness</li>
+              </ul>
+          </article>
       </div>
-      <div class="usage-item">
-        <i class="fas fa-tshirt" aria-hidden="true"></i>
-        <p>Load Clothes</p>
+  </section>
+
+  <!-- ================================ -->
+  <!-- ===      USAGE-SECTION       === -->
+  <section class="usage-section" id="usage">
+    <div class="usage-text">
+      <h1 id="usage-heading">HOW TO USE BREEZE</h1>
+      <p>Simple steps para malinis at mabango ang iyong damit gamit ang Breeze detergent.</p>
+    </div>
+
+    <!-- Icon slider -->
+    <div class="usage-slider" role="region" aria-label="Service Slider" tabindex="0">
+      
+      <!-- Arrow Buttons -->
+      <button class="arrow prev" aria-label="Previous Slide">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+
+      <div class="usage-track" aria-live="polite">
+        <div class="usage-item">
+          <i class="fas fa-hand-paper" aria-hidden="true"></i>
+          <p>Pre-treat Stains</p>
+        </div>
+        <div class="usage-item">
+          <i class="fas fa-tshirt" aria-hidden="true"></i>
+          <p>Load Clothes</p>
+        </div>
+        <div class="usage-item">
+          <img src="/assets/images/LOGO-BREEZE.svg" style="width: 80px; height: auto;" alt="Breeze logo"/>
+          <p>Add Breeze</p>
+        </div>
+        <div class="usage-item">
+          <i class="fas fa-sync-alt" aria-hidden="true"></i>
+          <p>Wash & Rinse</p>
+        </div>
+        <div class="usage-item">
+          <i class="fas fa-smile" aria-hidden="true"></i>
+          <p>Dry & Enjoy</p>
+        </div>
       </div>
-    <div class="usage-item">
-        <img src="/assets/images/LOGO-BREEZE.svg" style="width: 80px; height: auto;" />
-        <p>Add Breeze</p>
-    </div>
 
-      <div class="usage-item">
-        <i class="fas fa-sync-alt" aria-hidden="true"></i>
-        <p>Wash & Rinse</p>
+      <button class="arrow next" aria-label="Next Slide">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+
+      <!-- Navigation dots -->
+      <div class="dots" role="tablist" aria-label="Slide navigation">
+        <button class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Slide 5"></button>
       </div>
-      <div class="usage-item">
-        <i class="fas fa-smile" aria-hidden="true"></i>
-        <p>Dry & Enjoy</p>
+    </div>
+  </section>
+
+
+  <!-- ================================ -->
+  <!-- ===      VIDEO-SECTION       === -->
+  <section id="video" class="video-section">
+      <h2 class="video-title">Watch & Learn</h2>
+      <p class="video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae orci nec nulla convallis aliquet.</p>
+
+      <!-- Video Element -->
+      <div class="video-container">
+          <video class="video-element" controls>
+              <source src="/assets/video/Download (2).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
       </div>
-    </div>
 
-    <button class="arrow next" aria-label="Next Slide">
-      <i class="fas fa-chevron-right" aria-hidden="true"></i>
-    </button>
-
-    <!-- Navigation dots -->
-    <div class="dots" role="tablist" aria-label="Slide navigation">
-      <button class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
-      <button class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
-      <button class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
-      <button class="dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
-      <button class="dot" role="tab" aria-selected="false" aria-label="Slide 5"></button>
-    </div>
-  </div>
-</section>
-
-<!-- ================================-->
-<!-- ===      VIDEO-SECTION       === -->
-<section id="video" class="video-section">
-    <h2 class="video-title">Watch & Learn</h2>
-    <p class="video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae orci nec nulla convallis aliquet.</p>
-    <video class="video-element" width="100%" height="300" controls>
-        <source src="/assets/video/Download (2).mp4" type="video/mp4">
-    </video>
-    <p class="video-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-</section>
-
-<!-- ======================================-->
-<!-- ===      GUIDELINES-SECTION       === -->
-<section class="guide-section">
-    <h2 class="guide-title">Lorem Ipsum Dolor</h2>
-    <div class="guide-warning-box">
-        <strong>⚠️ Lorem:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </div>
-    
-    <ul>
-        <li><strong>Lorem ipsum dolor sit amet</strong> - Consectetur adipiscing elit</li>
-        <li><strong>Sed do eiusmod tempor</strong> - Incididunt ut labore et dolore magna aliqua</li>
-        <li><strong>Ut enim ad minim veniam</strong> - Quis nostrud exercitation ullamco</li>
-        <li><strong>Duis aute irure dolor</strong> - In reprehenderit in voluptate velit</li>
-        <li><strong>Excepteur sint occaecat</strong> - Cupidatat non proident</li>
-    </ul>
-
-    <div class="guide-box">
-        <strong>💡 Lorem:</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-    </div>
-</section>
-
-<section id="safety" class="guide-section">
-    <h2 class="guide-title">Lorem Ipsum Safety</h2>
-    
-    <div class="guide-warning-box">
-        <strong>⚠️ Lorem ipsum dolor sit amet</strong>
-    </div>
-
-    <h4>Lorem Ipsum:</h4>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-        <li>Duis aute irure dolor in reprehenderit</li>
-        <li>Excepteur sint occaecat cupidatat non proident</li>
-        <li>Sed ut perspiciatis unde omnis iste natus</li>
-    </ul>
-
-    <h4>Lorem Ipsum Risks:</h4>
-    <ul>
-        <li><strong>Lorem Ipsum:</strong> Dolor sit amet, consectetur adipiscing elit</li>
-        <li><strong>Dolor Sit:</strong> Amet, consectetur adipiscing elit</li>
-        <li><strong>Adipiscing Elit:</strong> Sed do eiusmod tempor incididunt</li>
-        <li><strong>Incididunt:</strong> Ut labore et dolore magna aliqua</li>
-    </ul>
-
-    <div class="guide-danger-box">
-        <strong>🚨 Lorem Ipsum:</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-    </div>
-</section>
-
-<section class="guide-section">
-    <h2 class="guide-title">Lorem Ipsum Reminders</h2>
-    
-    <ul>
-        <li><strong>Lorem ipsum dolor sit amet</strong> - Consectetur adipiscing elit</li>
-        <li><strong>Sed do eiusmod tempor</strong> - Incididunt ut labore et dolore magna aliqua</li>
-        <li><strong>Ut enim ad minim veniam</strong> - Quis nostrud exercitation ullamco</li>
-        <li><strong>Duis aute irure dolor</strong> - In reprehenderit in voluptate velit</li>
-        <li><strong>Excepteur sint occaecat</strong> - Cupidatat non proident</li>
-        <li><strong>Sed ut perspiciatis</strong> - Unde omnis iste natus error sit voluptatem</li>
-    </ul>
-
-    <div class="guide-warning-box">
-        <strong>🎯 Lorem:</strong> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-    </div>
-</section>
+      <p class="video-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  </section>
 
 
-<footer>
-  <p>© 2025 BreezeClean. All rights reserved.</p>
+  <!-- ======================================-->
+  <!-- ===      GUIDELINES-SECTION       === -->
+  <section class="guide-section">
+      <h2 class="guide-title">Lorem Ipsum Dolor</h2>
 
-  <p>
-    <a href="#products">PRODUCTS</a>
-    <a href="#usage">USAGE</a>
-    <a href="#video">VIDEO</a>
-    <a href="#safety">SAFETY</a>
-    <a href="#team">TEAM</a>
-  </p>
-</footer>
+      <div class="guide-warning-box">
+          <strong>⚠️ Lorem:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      
+      <ul>
+          <li><strong>Lorem ipsum dolor sit amet</strong> - Consectetur adipiscing elit</li>
+          <li><strong>Sed do eiusmod tempor</strong> - Incididunt ut labore et dolore magna aliqua</li>
+          <li><strong>Ut enim ad minim veniam</strong> - Quis nostrud exercitation ullamco</li>
+          <li><strong>Duis aute irure dolor</strong> - In reprehenderit in voluptate velit</li>
+          <li><strong>Excepteur sint occaecat</strong> - Cupidatat non proident</li>
+      </ul>
+
+      <div class="guide-box">
+          <strong>💡 Lorem:</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+      </div>
+  </section>
+
+  <section id="safety" class="guide-section">
+      <h2 class="guide-title">Lorem Ipsum Safety</h2>
+      
+      <div class="guide-warning-box">
+          <strong>⚠️ Lorem ipsum dolor sit amet</strong>
+      </div>
+
+      <h4>Lorem Ipsum:</h4>
+      <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
+          <li>Duis aute irure dolor in reprehenderit</li>
+          <li>Excepteur sint occaecat cupidatat non proident</li>
+          <li>Sed ut perspiciatis unde omnis iste natus</li>
+      </ul>
+
+      <h4>Lorem Ipsum Risks:</h4>
+      <ul>
+          <li><strong>Lorem Ipsum:</strong> Dolor sit amet, consectetur adipiscing elit</li>
+          <li><strong>Dolor Sit:</strong> Amet, consectetur adipiscing elit</li>
+          <li><strong>Adipiscing Elit:</strong> Sed do eiusmod tempor incididunt</li>
+          <li><strong>Incididunt:</strong> Ut labore et dolore magna aliqua</li>
+      </ul>
+
+      <div class="guide-danger-box">
+          <strong>🚨 Lorem Ipsum:</strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+      </div>
+  </section>
+
+  <section class="guide-section">
+      <h2 class="guide-title">Lorem Ipsum Reminders</h2>
+      
+      <ul>
+          <li><strong>Lorem ipsum dolor sit amet</strong> - Consectetur adipiscing elit</li>
+          <li><strong>Sed do eiusmod tempor</strong> - Incididunt ut labore et dolore magna aliqua</li>
+          <li><strong>Ut enim ad minim veniam</strong> - Quis nostrud exercitation ullamco</li>
+          <li><strong>Duis aute irure dolor</strong> - In reprehenderit in voluptate velit</li>
+          <li><strong>Excepteur sint occaecat</strong> - Cupidatat non proident</li>
+          <li><strong>Sed ut perspiciatis</strong> - Unde omnis iste natus error sit voluptatem</li>
+      </ul>
+
+      <div class="guide-warning-box">
+          <strong>🎯 Lorem:</strong> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+      </div>
+  </section>
+
+
+
+  <footer>
+    <p>
+      © 2025 BreezeClean. All rights reserved.
+    </p>
+
+    <p>
+      <a href="#products">PRODUCTS</a>
+      <a href="#usage">USAGE</a>
+      <a href="#video">VIDEO</a>
+      <a href="#safety">SAFETY</a>
+      <a href="#team">TEAM</a>
+    </p>
+  </footer>
 
 
 
