@@ -2,13 +2,6 @@
   /* Backgrounds */
   --bg-hero-section: #e8f5f8;
   --bg-moving-banner: #e6f0ff;
-  --bg-product-card: #fff;
-  --bg-product-image-2: #ffe4ec;
-  --bg-product-image-3: #fff6e0;
-  --bg-product-image-default: #dfe6e9;
-  --bg-usage-section: #f0f4ff;
-  --bg-usage-slider: #fff;
-  --bg-guide-section: #ffffff;
 
   /* Colors */
   --color-primary-blue: #0666c7;
@@ -145,7 +138,8 @@
 /*-----------------------------------*/
 /*          PRODUCT-SECTION          */
 /*-----------------------------------*/
-/*  MOVING-PRODUCT  */
+
+/* MOVING PRODUCT BANNER */
 .moving-banner {
   width: 100%;
   overflow: hidden;
@@ -154,14 +148,15 @@
   margin-bottom: 50px;
   border-radius: 8px;
   user-select: none;
+  position: relative;
 }
 
 .moving-product {
   display: flex;
-  white-space: nowrap;
-  animation: moveHorizontal 30s linear infinite;
   align-items: center;
   gap: 24px;
+  white-space: nowrap;
+  animation: moveHorizontal 30s linear infinite;
 }
 
 .moving-product img {
@@ -177,22 +172,21 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50%));
+    transform: translateX(-50%);
   }
 }
 
-/*  PRODUCT GRID  */
+/* PRODUCTS GRID */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  gap: 40px;
   margin-bottom: 80px;
   padding: 0 24px;
   transition: all 0.3s ease-in-out;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* = Section Title = */
 .products-title {
   text-align: center;
   font-size: 2rem;
@@ -202,72 +196,63 @@
   font-family: inherit;
 }
 
-/*  PRODUCT CARD  */
+/* PRODUCT CARD */
 .product-card {
-  background: var(--bg-product-card);
-  padding: 32px 24px;
-  border: 1px solid var(--border-product-card);
+  background-color: var(--bg-product-card, #fff);
+  padding: 40px 32px;
+  border: 1px solid var(--border-product-card, #ddd);
   border-radius: 12px;
-  box-shadow: 0 4px 20px var(--shadow-product-card);
+  box-shadow: 0 4px 20px var(--shadow-product-card, rgba(0, 0, 0, 0.08));
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: inherit;
 }
 
-/*  PRODUCT IMAGE  */
+/* PRODUCT IMAGE */
 .product-image {
-  background-color: var(--bg-product-image-default);
-  height: 220px;
-  margin-bottom: 24px;
+  background-color: var(--bg-product-image-default, #f1f1f1);
+  aspect-ratio: 4 / 3;
+  margin-bottom: 32px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  padding: 0;
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
   border-radius: inherit;
   transition: transform 0.3s ease;
 }
 
-.product-card:nth-child(2) .product-image {
-  background-color: var(--bg-product-image-2);
-}
-.product-card:nth-child(3) .product-image {
-  background-color: var(--bg-product-image-3);
-}
-
-/*  TITLES & TEXT  */
+/* TITLES & TEXT */
 .product-title {
   font: 700 1.5rem/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--color-text-title);
+  color: var(--color-text-title, #333);
   margin-bottom: 16px;
   letter-spacing: 0.5px;
 }
 
 .product-description {
   font: 1rem/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary, #666);
   margin-bottom: 24px;
   padding: 0 8px;
 }
 
-/*  FEATURES LIST  */
+/* FEATURE LIST */
 .product-features {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: left;
-  font-family: inherit;
 }
 
 .product-features li {
@@ -275,7 +260,7 @@
   padding-left: 28px;
   margin-bottom: 10px;
   font: 500 0.95rem/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--color-feature-green);
+  color: var(--color-feature-green, #2c7a5b);
 }
 
 .product-features li::before {
@@ -284,7 +269,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-feature-green);
+  color: var(--color-feature-green, #2c7a5b);
   font: bold 1rem/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -436,7 +421,7 @@
 /*-----------------------------------*/
 #video {
     position: relative;
-    max-width: 900px;
+    max-width: 100%;
     margin: 40px auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -450,29 +435,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.video-text {
-    font-size: 1.15rem;
-    color: var(--color-text-muted);
-    margin-bottom: 24px;
-    line-height: 1.7;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', serif;
-}
-
-.video-element {
-    width: 100%;
-    max-width: 860px;
-    height: auto;
-    border-radius: 10px;
-    border: 4px solid var(--color-white);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); 
-    margin-bottom: 30px;
-    display: block;
-    background-color: var(--color-black);
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    text-align: center;
 }
 
 .video-text {
@@ -480,13 +443,29 @@
     color: var(--color-text-dark);
     line-height: 1.7;
     text-align: center;
-    margin-top: 30px;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 24px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
 
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid var(--color-white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-black);
+}
+
+.video-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: contain;
+}
 /*-----------------------------------*/
 /*            GUIDE-SECTION          */
 /*-----------------------------------*/
@@ -564,9 +543,4 @@ li strong {
 
 li::marker {
     color: #6b7280;
-}
-
-#safety:target {
-    outline: 3px solid #2563eb;
-    outline-offset: 6px;
 }
