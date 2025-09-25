@@ -461,21 +461,21 @@
 
 .video-element {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
     display: block;
     border-radius: 10px;
-    object-fit: contain;
+    border: none;
 }
+
 /*-----------------------------------*/
 /*            GUIDE-SECTION          */
 /*-----------------------------------*/
 .guide-section {
     background: var(--bg-guide-section);
-    margin: 48px 0;
-    padding: 48px;
+    margin: 10px 0;
+    padding: 40px;
     border: 1px solid var(--border-guide-default); 
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(32, 33, 36, 0.1); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-text-guide); 
     line-height: 1.65;
@@ -499,8 +499,8 @@
     border-radius: 6px;
     font-weight: 600;
     font-size: 15px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03); 
 }
+
 .guide-warning-box {
     background-color: #fff8e1;
     border-left: 6px solid var(--border-guide-warning-left);
